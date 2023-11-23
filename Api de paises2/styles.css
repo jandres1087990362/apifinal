@@ -1,0 +1,152 @@
+:root {
+    --color-bg: #cebbbb;
+    --color-bg-secondary:rgba(255, 255, 255, 0.6);
+    --color-text: #000000;
+    --color-primary: #1e90ff;
+    --color-secondary: #a09073;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg);
+    color: #151111;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.img-fluid{
+    width: 100%;
+    
+}
+
+/*espaciados*/
+.my-2{
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+}
+
+/* navbar */
+.navbar-content button, .card-img, .flag-img {
+    transition: all 0.3s ease;
+}
+
+.navbar-content button:focus, .navbar-content button:active, .navbar-content a:focus, .navbar-content a:active {
+    outline: none;
+    box-shadow: 0 0 5px #1e90ff;
+}
+
+.navbar {
+    background-color: rgb(182, 189, 181);
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-content{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .navbar-content h1 {
+        margin: 0;
+    }
+
+    .navbar-content button {
+        padding: 0.5em 1em;
+        background-color: transparent;
+        border: 1px solid #000000;
+        color: #000000;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .navbar-content button:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    
+    /*filtros*/
+    .filter-content{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top: 2em;
+    }
+
+    .filter-content form input[type="text"] {
+        padding: 0.5em;
+        width: 70%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .filter-content select {
+        padding: 0.5em;
+        border: 1px solid #b39999;
+        border-radius: 5px;
+    }
+    
+    /* main */
+    .card {
+        border: 5px solid #ccc;
+        border-radius: 5px;
+        padding: 1em;
+        margin-top: 1em;
+        display: flex;
+    }
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.flag-card {
+    border: 3px solid #114f31;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+        
+}
+.flag-card img {
+    max-width: 100%;
+    height: auto;
+}
+.flag-card:hover img {
+    transform: scale(1.1);
+}
+.flag-card:hover {
+    background-color: #8bbbc4;
+}
+.flag-img {
+    max-width: 100%;
+    height: auto;
+}
+.card img {
+    max-width: 100px;
+    margin-right: 1em;
+}  
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #333; 
+    color: #fff; 
+}
+/* Botón de Modo Oscuro */
+#toggleTheme {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #988c8c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

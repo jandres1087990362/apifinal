@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api de paises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="container"></div>    
+    <div class="container navbar-content">
+        <h1>Where in the World</h1>
+        <button id="toggleTheme">Modo oscuro</button>
+    </div>
+    </nav>
+    <header class="container filter-content my-2">
+    <form>
+        <input type="text" id="searchInput" placeholder="ingresa paises">
+    </form>
+    <div>
+        <select id="regionSelect">
+            <option value="">Filtrar por Region</option>
+            <option value="Africa">África</option>
+            <option value="Americas">América</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceanía</option>
+        </select>
+    </div>
+    </header>
+    <main class="container">
+    <div class="flag-grid"></div>   
+    </main>
+
+     <script src="app.js"></script>
+
+</body>
+
+</html>
